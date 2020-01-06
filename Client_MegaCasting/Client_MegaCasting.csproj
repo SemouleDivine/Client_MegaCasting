@@ -92,11 +92,14 @@
     <Compile Include="Views\Listings\ClientListView.xaml.cs">
       <DependentUpon>ClientListView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Windows\ClientListWindow.xaml.cs">
+    <Compile Include="Views\Windows\List\ClientListWindow.xaml.cs">
       <DependentUpon>ClientListWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Windows\OffreListWindow.xaml.cs">
+    <Compile Include="Views\Windows\List\OffreListWindow.xaml.cs">
       <DependentUpon>OffreListWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\Add\OffreWindow.xaml.cs">
+      <DependentUpon>OffreWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -118,11 +121,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Windows\ClientListWindow.xaml">
+    <Page Include="Views\Windows\List\ClientListWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Windows\OffreListWindow.xaml">
+    <Page Include="Views\Windows\List\OffreListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\Add\OffreWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Client_MegaCasting.ViewModel;
+using Client_MegaCasting.Views.Listings;
+using Client_MegaCasting.Views.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,11 +26,12 @@ namespace Client_MegaCasting
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainViewModel();
         }
 
         private void ClientClick(object sender, RoutedEventArgs e)
         {
-
+            (new ClientListWindow()).ShowDialog();
         }
 
         private void PartenaireClick(object sender, RoutedEventArgs e)

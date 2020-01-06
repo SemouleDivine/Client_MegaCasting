@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\felix\Documents\Cours\PPE\Client_MegaCasting\Client_MegaCasting\App.xaml
-3-1139784292
+5-747443604
 
-14-1190088886
+16301966352
 126435146997
-MainWindow.xaml;Views\Items\ClientItemWindow.xaml;Views\Listings\ClientListView.xaml;
+MainWindow.xaml;Views\Items\ClientItemWindow.xaml;Views\Listings\ClientListView.xaml;Views\Windows\ClientListWindow.xaml;Views\Windows\OffreListWindow.xaml;
 
 True
 

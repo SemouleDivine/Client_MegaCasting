@@ -5,10 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client_MegaCasting"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" SizeToContent="WidthAndHeight">
     <Grid>
-        <Grid.ColumnDefinitions>
-            
-        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="12">
+                <Button Width="150" Height="50" Content="Client" Click="ClientClick" Margin="12"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="12">
+                <Button Width="150" Height="50" Content="Partenaires de diffusion" Click="PartenaireClick" Margin="12"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="12">
+                <Button Width="150" Height="50" Content="Offre" Click="OffreClick" Margin="12"></Button>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>

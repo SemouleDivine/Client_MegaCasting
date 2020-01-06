@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\felix\source\repos\Client_MegaCasting\Client_MegaCasting\obj\Debug\
+C:\Users\felix\Documents\Cours\PPE\Client_MegaCasting\Client_MegaCasting\obj\Debug\
 Client_MegaCasting
 none
 false
 DEBUG;TRACE
-C:\Users\felix\source\repos\Client_MegaCasting\Client_MegaCasting\App.xaml
-11151548125
+C:\Users\felix\Documents\Cours\PPE\Client_MegaCasting\Client_MegaCasting\App.xaml
+3-1139784292
 
-61969803046
-13-1505183044
-MainWindow.xaml;
+14-1190088886
+126435146997
+MainWindow.xaml;Views\Items\ClientItemWindow.xaml;Views\Listings\ClientListView.xaml;
 
 True
 

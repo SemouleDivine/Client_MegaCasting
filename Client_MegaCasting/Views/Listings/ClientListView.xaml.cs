@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Client_MegaCasting.ViewModel.Listings;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,31 +14,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Client_MegaCasting
+namespace Client_MegaCasting.Views.Listings
 {
     /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
+    /// Logique d'interaction pour ClientListView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ClientListView : UserControl
     {
-        public MainWindow()
+        public ClientListView()
         {
             InitializeComponent();
-        }
-
-        private void ClientClick(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void PartenaireClick(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void OffreClick(object sender, RoutedEventArgs e)
-        {
-
+            this.DataContext = new ClientListViewModel();
         }
     }
 }

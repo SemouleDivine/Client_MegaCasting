@@ -19,7 +19,7 @@ namespace Client_MegaCasting.Views.Windows
     /// <summary>
     /// Logique d'interaction pour OffreListWindow.xaml
     /// </summary>
-    public partial class OffreListWindow : Window
+    public partial class OffreListWindow //: Window
     {
 
         private MegaProdEntities myDb = new MegaProdEntities();
@@ -39,16 +39,16 @@ namespace Client_MegaCasting.Views.Windows
         private void ButtonAjouter_Click(object sender, RoutedEventArgs e)
         {
             OffreWindow window = new OffreWindow();
-            window.ShowDialog();
+            //window.ShowDialog();
 
             //La fenêtre a été fermée
-            if (window.DialogResult.HasValue && window.DialogResult == true)
+            if (true/*window.DialogResult.HasValue && window.DialogResult == true*/)
             {
                 try
                 {
-                    Offre OffreAAjouter = ((Offre)window.DataContext);
+                   /* Offre OffreAAjouter = ((Offre)window.DataContext);
                     myDb.Offre.Add(OffreAAjouter);
-                    myDb.SaveChanges();
+                    myDb.SaveChanges();*/
                 }
                 catch (Exception ex)
                 {
@@ -64,7 +64,7 @@ namespace Client_MegaCasting.Views.Windows
             {
                 Offre OffreAModifier = (Offre)DataGridContenu.SelectedItem;
                 OffreWindow window = new OffreWindow(OffreAModifier);
-                window.ShowDialog();
+                /*window.ShowDialog();
 
                 if (window.DialogResult.HasValue && window.DialogResult == true)
                 {
@@ -80,7 +80,7 @@ namespace Client_MegaCasting.Views.Windows
                 else
                 {
                     myDb = new MegaProdEntities();
-                }
+                }*/
                 LoadOrReloadDatas();
             }
             else

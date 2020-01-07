@@ -17,7 +17,7 @@ namespace Client_MegaCasting.Views.Windows
     /// <summary>
     /// Logique d'interaction pour ClientListWindow.xaml
     /// </summary>
-    public partial class ClientListWindow : Window
+    public partial class ClientListWindow //: Window
     {
         public ClientListWindow()
         {

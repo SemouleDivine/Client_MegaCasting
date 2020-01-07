@@ -18,21 +18,21 @@ namespace Client_MegaCasting.Views.Windows
     /// <summary>
     /// Logique d'interaction pour OffreWindow.xaml
     /// </summary>
-    public partial class OffreWindow : Window
+    public partial class OffreWindow //: Window
     {
   
         #region Constructeurs
 
         public OffreWindow()    
         {
-            InitializeComponent();
-            this.DataContext = new Offre();
+            //InitializeComponent();
+            //this.DataContext = new Offre();
         }
 
         public OffreWindow(Offre OffreAModifier)
         {
-            InitializeComponent();
-            this.DataContext = OffreAModifier;
+            //InitializeComponent();
+            //this.DataContext = OffreAModifier;
         }
 
         #endregion
@@ -46,15 +46,15 @@ namespace Client_MegaCasting.Views.Windows
         {
             if (VerificationChamps())
             {
-                this.DialogResult = true;
-                this.Close();
+                //this.DialogResult = true;
+                //this.Close();
             }
         }
 
         private void Annuler_Click(object sender, RoutedEventArgs e)
         {
-            this.DialogResult = false;
-            this.Close();
+            //this.DialogResult = false;
+            //this.Close();
         }
     }
 }

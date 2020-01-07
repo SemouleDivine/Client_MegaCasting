@@ -50,8 +50,8 @@
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Grid.Children>
-                    <Button Content="Valider" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="80" Click="Valider_Click"></Button>
-                    <Button Content="Annuler" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Height="40" Width="80" Click="Annuler_Click"></Button>
+                    <Button Content="Valider" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="80" ></Button>
+                    <Button Content="Annuler" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Height="40" Width="80" ></Button>
                 </Grid.Children>
             </Grid>
         </Grid.Children>

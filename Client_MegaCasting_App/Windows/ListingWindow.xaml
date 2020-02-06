@@ -1,0 +1,28 @@
+﻿<Window x:Class="Client_MegaCasting_App.Windows.ListingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client_MegaCasting_App.Windows"
+        mc:Ignorable="d"
+        Title="ListingWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.Children>
+            <Menu Grid.Row="0">
+                <MenuItem Header="Ajouter" Command="{Binding ListingEnCours.AddCommand}" />
+                    <MenuItem Header="Modifier" Command="{Binding ListingEnCours.UpdateCommand}"/>
+                    <MenuItem Header="Supprimer" Command="{Binding ListingEnCours.DeleteCommand}"/>
+                    <Separator />
+                <MenuItem Header="Quitter" Command="{Binding QuitterCommand}" />
+            </Menu>
+            <!-- Contenu (UserControl) (ligne 1) -->
+            <Grid Grid.Row="1" x:Name="Content">
+                <!-- On ajoutera en dynamique notre usercontrol -->
+            </Grid>
+        </Grid.Children>
+    </Grid>
+</Window>
